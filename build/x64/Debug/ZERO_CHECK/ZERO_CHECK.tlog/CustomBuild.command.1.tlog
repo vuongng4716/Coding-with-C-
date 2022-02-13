@@ -1,0 +1,10 @@
+^C:\USERS\THINKPAD\DESKTOP\OPENCV-TUT\BUILD\CMAKEFILES\11C1DEEE8F59E017FDED0866146D87D8\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ThinkPad/Desktop/opencv-tut -BC:/Users/ThinkPad/Desktop/opencv-tut/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/ThinkPad/Desktop/opencv-tut/build/opencv-tut.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
